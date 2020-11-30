@@ -5,11 +5,11 @@ Lo primero es definir tres colores, los que deberían coincidir con los utilizad
 ------------------------------------------------------------------------------------------------- */
 
 :root {
-  --primercolor: #222; 
-  --segundocolor: #666; /* menos luminoso */
+  --primercolor: rgba(0,0,0,1); 
+  --segundocolor: rgba(255,255,255,1); /* menos luminoso */
   --tercercolor: rgba(214,37,152,1); /* más luminoso */
-  --colorclaro: rgba(255,255,255,0.8);
-  --coloroscuro: rgba(0,0,0,0.8);
+  --colorclaro: rgba(255,255,255,1);
+  --coloroscuro: rgba(0,0,0,1);
 }
 
 /* ----------------------------------------- IMPORTANTE -----------------------------------------
