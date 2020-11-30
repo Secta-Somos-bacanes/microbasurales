@@ -33,6 +33,12 @@ body{
     font-weight: 400;
 }
 
+p{
+    font-family: 'Gaegu', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
 a{
     color:var(--colorclaro);
     text-decoration: underline;
