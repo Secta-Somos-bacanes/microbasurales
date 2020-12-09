@@ -202,13 +202,15 @@
             console.log(h);
             // comenzamos con p5.js
             function setup() {
+                fondoMapa = loadImage('img/fondo.png');
                 var canvas = createCanvas(w, h);
                 canvas.parent("#p5");
+                background(0);
             }
-
+            
             function draw() {
-                background(200);
-                fill(0);
+                fill(255);
+                noStroke(0)
                 ellipse(mouseX, mouseY, 50, 50);
             }
 

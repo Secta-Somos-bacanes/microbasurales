@@ -5,11 +5,11 @@ Lo primero es definir tres colores, los que deberían coincidir con los utilizad
 ------------------------------------------------------------------------------------------------- */
 
 :root {
-  --primercolor: rgba(0,0,0,1); 
-  --segundocolor: rgba(255,255,255,1); /* menos luminoso */
-  --tercercolor: rgba(214,37,152,1); /* más luminoso */
-  --colorclaro: rgba(255,255,255,1);
-  --coloroscuro: rgba(0,0,0,1);
+	--primercolor: rgba(0, 0, 0, 1);
+	--segundocolor: rgba(255, 255, 255, 1); /* menos luminoso */
+	--tercercolor: rgba(214, 37, 152, 1); /* más luminoso */
+	--colorclaro: rgba(255, 255, 255, 1);
+	--coloroscuro: rgba(0, 0, 0, 1);
 }
 
 /* ----------------------------------------- IMPORTANTE -----------------------------------------
@@ -25,32 +25,32 @@ Otra cosa que deberías rescatar de tu fanzine son las tipografías, usando http
 
 ------------------------------------------------------------------------------------------------- */
 
-
-body{
-    background:var(--segundocolor);
-    color:var(--coloroscuro);
-    font-family: 'Nerko One', sans-serif;
-    font-weight: 400;
+body {
+	background: var(--segundocolor);
+	color: var(--coloroscuro);
+	font-family: 'Nerko One', sans-serif;
+	font-weight: 400;
 }
 
-p{
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
+p {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
 }
 
-a{
-    color:var(--coloroscuro);
-    text-decoration: underline;
+a {
+	color: var(--coloroscuro);
+	text-decoration: underline;
 }
 
-a:hover{
-    color:var(--coloroscuro);
-    text-decoration: none;
+a:hover {
+	color: var(--coloroscuro);
+	text-decoration: none;
 }
 
-header, header div.container{
-    height: 80vh;
+header,
+header div.container {
+	height: 80vh;
 }
 
 /* ----------------------------------------- IMPORTANTE -----------------------------------------
@@ -65,30 +65,41 @@ De tal manera podría "fundirse" con el color de fondo, ofreciendo continuidad, 
 
 ------------------------------------------------------------------------------------------------- */
 
-header{
-    background-color:var(--segundocolor);
-    background-image:url('img/wireframe-aspect_ratio-1-1.png');
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size:100% auto;
-    color:var(--coloroscuro);
+header {
+	background-color: var(--segundocolor);
+	background-image: url('img/wireframe-aspect_ratio-1-1.png');
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	color: var(--coloroscuro);
 }
 
-@media (min-width: 576px) { 
-    header{background-image:url('img/wireframe-aspect_ratio-4-3.png');}
+@media (min-width: 576px) {
+	header {
+		background-image: url('img/wireframe-aspect_ratio-4-3.png');
+	}
 }
 
-@media (min-width: 768px) { 
-    header{background-image:url('img/wireframe-aspect_ratio-16-9.png');}
+@media (min-width: 768px) {
+	header {
+		background-image: url('img/wireframe-aspect_ratio-16-9.png');
+	}
 }
 
-@media (min-width: 992px) { 
-    header{background-image:url('img/wireframe-aspect_ratio-2.75-1.png');}
+@media (min-width: 992px) {
+	header {
+		background-image: url('img/wireframe-aspect_ratio-2.75-1.png');
+	}
 }
 
-
-h1, h2, h3, h4, h5, h6, strong{
-    font-weight: 800;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+	font-weight: 800;
 }
 
 /* ----------------------------------------- IMPORTANTE -----------------------------------------
@@ -101,34 +112,45 @@ Con tales colores, la imagen sirve de transición a la parte que ofrece más inf
 
 ------------------------------------------------------------------------------------------------- */
 
-main{
-    background-image:url('img/wireframe-aspect_ratio-4-1.png');
-    background-position: left bottom;
-    background-repeat: repeat-x;
-    background-size:100% auto;
+main {
+	background-image: url('img/wireframe-aspect_ratio-4-1.png');
+	background-position: left bottom;
+	background-repeat: repeat-x;
+	background-size: 100% auto;
 }
 
-@media (min-width: 768px) { 
-    main{background-size:50% auto;}
+@media (min-width: 768px) {
+	main {
+		background-size: 50% auto;
+	}
 }
 
-aside{
-    background:var(--tercercolor);
-    color:var(--coloroscuro);
+aside {
+	background: var(--tercercolor);
+	color: var(--coloroscuro);
 }
 
-footer{
-    color:var(--segundcolor);
+footer {
+	color: var(--segundcolor);
 }
 
-footer a{
-    text-decoration: none;
-    color:var(--segundcolor);
+footer a {
+	text-decoration: none;
+	color: var(--segundcolor);
 }
 
-footer a:hover{
-    text-decoration: none;
-    color:var(--coloroscuro);
+footer a:hover {
+	text-decoration: none;
+	color: var(--coloroscuro);
+}
+
+::selection {
+	background-color: var(--tercercolor);
+	color: var(--colorclaro);
+}
+
+div {
+	user-select: none;
 }
 
 /* ----------------------------------------- IMPORTANTE -----------------------------------------
@@ -137,46 +159,48 @@ No es necesario modificar lo que sigue.
 
 ------------------------------------------------------------------------------------------------- */
 
-.card, .card-img-top{
-    background:var(--colorclaro);
-    border:none;
-    border-radius: 0 0;
+.card,
+.card-img-top {
+	background: var(--coloroclaro);
+	border-radius: 50%;
+	margin: 0 auto;
 }
 
 svg#ilustracion {
-    background:var(--colorclaro);;
+	background: var(--colorclaro);
 }
 
-#p5{
-    overflow: hidden;
+#p5 {
+	overflow: hidden;
 }
 
 .feather {
-   margin-bottom:0.4rem;
+	margin-bottom: 0.4rem;
 }
 
-
-.modal, .modal-dialog, .modal-content{
-    border:none;
-    border-radius: 0 0;
-    color:var(--coloroscuro);    
+.modal,
+.modal-dialog,
+.modal-content {
+	border: none;
+	border-radius: 0 0;
+	color: var(--coloroscuro);
 }
 
-.modal-header h4.modal-title{
-    line-height: 1;
-    margin:0;
-    padding:0;
+.modal-header h4.modal-title {
+	line-height: 1;
+	margin: 0;
+	padding: 0;
 }
 
-.modal-header .feather{
-   margin-bottom:0;    
+.modal-header .feather {
+	margin-bottom: 0;
 }
 
-.modal h5.cart-title{
-    font-size:0.9rem;
-    font-weight: 400;
+.modal h5.cart-title {
+	font-size: 0.9rem;
+	font-weight: 400;
 }
 
-.modal p.card-text{
-    font-size:0.8rem;
+.modal p.card-text {
+	font-size: 0.8rem;
 }
