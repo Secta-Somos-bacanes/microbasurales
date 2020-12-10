@@ -39,7 +39,7 @@ p {
 }
 
 a {
-	color: var(--coloroscuro);
+	color: var(--tercercolor);
 	text-decoration: underline;
 }
 
