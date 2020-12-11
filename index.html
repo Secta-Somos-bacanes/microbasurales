@@ -80,23 +80,36 @@
                             la opción "insertar". Copien el código. Luego reemplacen en ancho y alto por la clase de
                             Bootstrap.
                         </p>
-                    </div>
                 </div>
-            </article>
-            <!--artículo con CANVAS-->
-            <article>
-                <div class="container">
-                    <div class="row py-5 align-items-center">
-                        <div class="col-md-6 col-lg-7 order-sm-last"><div id="p5"></div></div>
-                        <div class="col-md-6 col-lg-5 p-4 text-md-right order-sm-first">
-                            <h3><i data-feather="map"></i> Mapa interactivo: microbasurales en la RM</h3>
-                            <p>
-                                Podemos encontrar microbasurales principalmente en las comunas de La Pintana, Maipú, Puente Alto, Cerrillos, Estación Central. Esto es asociable al nivel socioeconómico de la población y la cantidad de recursos que destinan a la conservación y cuidado de cada comuna. Esto repercute directamente en el estilo de vida de las personas, y el vivir en un medio ambiente libre de contaminación debería ser un derecho para todes. No es posible hablar de sustentabilidad, desarrollo y equidad sin avanzar en condiciones dignas para la vida. La presencia de microbasurales rodeando a comunidades carentes de recursos o afectando sus cursos de agua, en un agravio más a la condición desmejorada en que difícilmente viven miles de seres humanos. Esto no es aceptable en el siglo XXI.
-                            </p>
-                            <p class="small d-none d-lg-block">
-                               Puedes apretar los diferentes botones para observar la concentración de microbasurales en distintas comunas. *Referencia: Soto, M. M. (2016). Diagnóstico de la localización de Microbasurales, Región Metropolitana. Diagnóstico, 8(2).
-                            </p>
-                        </div>
+        </article>
+        <!--artículo con SVG-->
+
+        <article>
+            <div class="container">
+                <div class="row py-5 align-items-center">
+                    <div class="col-md-6 col-lg-7">
+                        <svg version="1.1" id="ilustracion" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 800 450"
+                            xml:space="preserve">
+                            <circle cx="400" cy="225" r="35" />
+                        </svg>
+                    </div>
+                    <div class="col-md-6 col-lg-5 p-4">
+                        <h3><i data-feather="pen-tool"></i> Este subtítulo tiene que comentar un svg
+                        </h3>
+                        <p>
+                            SVG (Scalable Vector Graphics) es un dialecto de descripción de gráficos
+                            vectoriales bidimensionales, tanto estáticos como animados. Es más que una
+                            opción para guardar en Illustrator. <a
+                                href="https://developer.mozilla.org/es/docs/Web/SVG">SVG es un estándar
+                                Web abierto basado en texto</a>.
+                        </p>
+                        <p class="small d-none d-lg-block">
+                            Si revisan el código fuente, podrán notar que el gráfico mantiene una
+                            proporción definida con <a
+                                href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/viewBox">viewBox</a>,
+                            y con ella se adapta a cualquier condición de pantalla.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -109,16 +122,25 @@
                         <div id="p5"></div>
                     </div>
                     <div class="col-md-6 col-lg-5 p-4 text-md-right order-sm-first">
-                        <h3><i data-feather="map"></i> Este subtítulo tiene que comentar un canvas</h3>
+                        <h3><i data-feather="map"></i> Mapa interactivo: microbasurales en la RM</h3>
                         <p>
-                            Canvas también nos permite dibujar con texto. Pero aquí tenemos un elemento de HTML cuyas
-                            dimensiones no se ajustan automáticamente, y dentro del cual se programan gráficos tipo
-                            bitmap, generalmente, con JavaScript.
+                            Podemos encontrar microbasurales principalmente en las comunas de La
+                            Pintana, Maipú, Puente Alto, Cerrillos, Estación Central. Esto es asociable
+                            al nivel socioeconómico de la población y la cantidad de recursos que
+                            destinan a la conservación y cuidado de cada comuna. Esto repercute
+                            directamente en el estilo de vida de las personas, y el vivir en un medio
+                            ambiente libre de contaminación debería ser un derecho para todes. No es
+                            posible hablar de sustentabilidad, desarrollo y equidad sin avanzar en
+                            condiciones dignas para la vida. La presencia de microbasurales rodeando a
+                            comunidades carentes de recursos o afectando sus cursos de agua, en un
+                            agravio más a la condición desmejorada en que difícilmente viven miles de
+                            seres humanos. Esto no es aceptable en el siglo XXI.
                         </p>
                         <p class="small d-none d-lg-block">
-                            En este caso, se recomienda utilizar <a href="https://p5js.org/es/">p5.js</a>, una
-                            biblioteca de JavaScript que reformula Processing (que está basado en Java), y les puede
-                            permitir introducirse a un lenguaje de programación.
+                            Puedes apretar los diferentes botones para observar la concentración de
+                            microbasurales en distintas comunas. *Referencia: Soto, M. M. (2016).
+                            Diagnóstico de la localización de Microbasurales, Región Metropolitana.
+                            Diagnóstico, 8(2).
                         </p>
                     </div>
                 </div>
@@ -139,34 +161,51 @@
                             y poder insertar este problema bajo una mirada de Constitución Ecológica.
                         </p>
                     </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card shadow-sm">
-                            <a href="https://www.google.com" target="_blank" >
-                                <img src="img/wireframe-aspect_ratio-16-9.png" class="card-img-top" alt="describa la imagen" />
-                            </a>
-                            <div class="card-body">
-                                <p class="card-text">“Chile necesita vivir en un ambiente libre de contaminación”: observa el ránking de áreas verdes por comuna y la cantidad de residuos que se generan a nivel país.</p>
-                            </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <!--vamos terminando, con más información-->
+    <aside class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center py-3">
+                    <h3>Más información</h3>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm">
+                        <a href="https://www.google.com" target="_blank">
+                            <img src="img/wireframe-aspect_ratio-16-9.png" class="card-img-top"
+                                alt="describa la imagen" />
+                        </a>
+                        <div class="card-body">
+                            <p class="card-text">“Chile necesita vivir en un ambiente libre de contaminación”: observa
+                                el ránking de áreas verdes por comuna y la cantidad de residuos que se generan a nivel
+                                país.</p>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card shadow-sm">
-                            <img src="img/wireframe-aspect_ratio-16-9.png" class="card-img-top" alt="describa la imagen" />
-                            <div class="card-body">
-                                <p class="card-text">Ministerio del Medio Ambiente: infórmate sobre las leyes actuales que existen en relación a las áreas verdes y las regulaciones de la contaminación ambiental.</p>
-                            </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="img/wireframe-aspect_ratio-16-9.png" class="card-img-top" alt="describa la imagen" />
+                        <div class="card-body">
+                            <p class="card-text">Ministerio del Medio Ambiente: infórmate sobre las leyes actuales que
+                                existen en relación a las áreas verdes y las regulaciones de la contaminación ambiental.
+                            </p>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card shadow-sm">
-                            <img src="img/wireframe-aspect_ratio-16-9.png" class="card-img-top" alt="describa la imagen" />
-                            <div class="card-body">
-                                <p class="card-text">“Los chilenos piden que la constitución debe ser ecológica”: Prensa alemana expone lo que nos dejó el plebiscito del 25 de Octubre.</p>
-                            </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="img/wireframe-aspect_ratio-16-9.png" class="card-img-top" alt="describa la imagen" />
+                        <div class="card-body">
+                            <p class="card-text">“Los chilenos piden que la constitución debe ser ecológica”: Prensa
+                                alemana expone lo que nos dejó el plebiscito del 25 de Octubre.</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </aside>
     <!--Y aquí cerramos -->
