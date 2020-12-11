@@ -63,6 +63,10 @@ li{
 	font-family: 'Quicksand', sans-serif;
 }
 
+img{
+	border-radius: 4px;
+}
+
 /* ----------------------------------------- IMPORTANTE -----------------------------------------
 
 En sus distitas versiones, la imagen de fondo debe usar su --segundocolor en la parte baja.
