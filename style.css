@@ -26,7 +26,7 @@ Otra cosa que deberías rescatar de tu fanzine son las tipografías, usando http
 ------------------------------------------------------------------------------------------------- */
 
 body {
-	background: var(--segundocolor);
+	background: var(--tercercolor);
 	color: var(--coloroscuro);
 	font-family: 'Nerko One', sans-serif;
 	font-weight: 400;
@@ -36,10 +36,11 @@ p {
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 400;
 	font-size: 20px;
+	color: rgb(224, 224, 244);
 }
 
 a {
-	color: var(--tercercolor);
+	color: var(--coloroscuro);
 	text-decoration: underline;
 }
 
@@ -109,6 +110,7 @@ h5,
 h6,
 strong {
 	font-weight: 800;
+	color: var(--colorclaro);
 }
 
 /* ----------------------------------------- IMPORTANTE -----------------------------------------
@@ -154,8 +156,8 @@ footer a:hover {
 }
 
 ::selection {
-	background-color: var(--tercercolor);
-	color: var(--colorclaro);
+	background-color: var(--colorclaro);
+	color: var(--coloroscuro);
 }
 
 /* ----------------------------------------- IMPORTANTE -----------------------------------------
