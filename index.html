@@ -80,7 +80,7 @@
                             la opción "insertar". Copien el código. Luego reemplacen en ancho y alto por la clase de
                             Bootstrap.
                         </p>
-                </div>
+                    </div>
         </article>
         <!--artículo con SVG-->
 
@@ -214,10 +214,13 @@
             <div class="row">
                 <div class="col-12 py-3 d-flex justify-content-between align-items-center">
                     <small>
-                        <a href="https://github.com/profesorfaco/digital">Módulo Digital</a> &bull;
+                        <a href="https://github.com/profesorfaco/digital">Módulo Digital</a>
+                        <span> - </span>
                         <a
                             href="http://catalogo.uc.cl/index.php?tmpl=component&option=com_catalogo&view=programa&sigla=dno0323">Procesos
-                            de Producción</a> &bull; <a href="https://diseno.uc.cl/">Diseño UC</a>
+                            de Producción</a>
+                        <span> - </span>
+                        <a href="https://diseno.uc.cl/">Diseño UC</a>
                     </small>
                     <a href="#nuestroModal" data-toggle="modal"><i data-feather="info"></i></a>
                 </div>
@@ -333,7 +336,7 @@
         ];
         // No es necesario que editen lo que sigue
         for (let x = 0; x < integrantes.length; x++) {
-            $("#team").append('<div class="col-sm-6 col-xl-4"><div class="card mb-3 shadow-sm"><div class="row no-gutters"><div class="col-md-5"><img src="' + integrantes[x].foto + '" class="card-img" alt="describir imagen"></div><div class="col-md-7"><div class="card-body"><h5 class="card-title">' + integrantes[x].nombre + '</h5><p class="card-text"> <ul><li> ' + integrantes[x].descriptor[0] + "</li>" + "<li>" + integrantes[x].descriptor[1] + "</li>" + "<li>" + integrantes[x].descriptor[2] + "</li></ul>" + "</p></div></div></div></div></div>");
+            $("#team").append('<div class="col-sm-6 col-xl-4"><div class="card mb-3 shadow-sm"><div class="row no-gutters"><div class="col-md-5"><img src="' + integrantes[x].foto + '" class="card-img" alt="describir imagen"></div><div class="col-md-7"><div class="card-body"><h5 class="card-title">' + integrantes[x].nombre + '</h5><p class="card-text"> <ul><li> ' + integrantes[x].descriptor[0] + "</li>" + "<li>" + integrantes[x].descriptor[2] + "</li></ul>" + "</p></div></div></div></div></div>");
         }
     </script>
 </body>
