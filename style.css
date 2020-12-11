@@ -53,6 +53,15 @@ header div.container {
 	height: 80vh;
 }
 
+ul{
+	padding-left: 1em;
+	margin: 0;
+}
+
+li{
+	font-family: 'Quicksand', sans-serif;
+}
+
 /* ----------------------------------------- IMPORTANTE -----------------------------------------
 
 En sus distitas versiones, la imagen de fondo debe usar su --segundocolor en la parte baja.
