@@ -93,6 +93,16 @@ header {
 	color: var(--coloroscuro);
 }
 
+.titulo {
+	color: var(--tercercolor);
+	font-size: 10vw;
+}
+.subtitulo {
+	color: var(--coloroscuro);
+	font-family: 'Quicksand';
+	font-size: 5vw;
+}
+
 @media (min-width: 576px) {
 	header {
 		background-image: url('img/fondoarriba-aspect_ratio-4-3.png');
@@ -111,6 +121,12 @@ header {
 	header div.container {
 		height: 56vw;
 	}
+	.titulo {
+		font-size: 8vw;
+	}
+	.subtitulo {
+		font-size: 3vw;
+	}
 }
 
 @media (min-width: 992px) {
@@ -120,6 +136,12 @@ header {
 	header,
 	header div.container {
 		height: 36vw;
+	}
+	.titulo {
+		font-size: 5vw;
+	}
+	.subtitulo {
+		font-size: 2vw;
 	}
 }
 
@@ -132,13 +154,6 @@ h6,
 strong {
 	font-weight: 800;
 	color: var(--colorclaro);
-}
-
-.titulo {
-	color: var(--tercercolor);
-}
-.subtitulo {
-	color: var(--coloroscuro);
 }
 
 span {
