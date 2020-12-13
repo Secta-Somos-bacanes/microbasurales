@@ -64,10 +64,6 @@ li {
 	font-family: 'Quicksand', sans-serif;
 }
 
-img {
-	border-radius: 4px;
-}
-
 small {
 	color: var(--colorclaro);
 }
@@ -203,7 +199,6 @@ No es necesario modificar lo que sigue.
 .card,
 .card-img-top {
 	background: var(--colorclaro);
-	border-radius: 4px;
 }
 
 .card-icons {
@@ -213,6 +208,12 @@ No es necesario modificar lo que sigue.
 
 .card-icons .small {
 	color: var(--coloroscuro);
+}
+
+.small {
+	font-size: 80%;
+	font-family: 'Quicksand';
+	color: var(--colorclaro);
 }
 
 svg#ilustracion {
@@ -239,6 +240,7 @@ svg#ilustracion {
 	line-height: 1;
 	margin: 0;
 	padding: 0;
+	color: var(--coloroscuro);
 }
 
 .modal-header .feather {
@@ -263,14 +265,6 @@ svg#ilustracion {
 #team {
 	margin-left: 0;
 	margin-right: 0;
-}
-
-#team > div > div > div > div.col-md-7 > div {
-	background: var(--colorclaro);
-}
-
-#team > div > div > div > div.col-md-7 > div > h5 {
-	color: var(--coloroscuro);
 }
 
 .card-body {
