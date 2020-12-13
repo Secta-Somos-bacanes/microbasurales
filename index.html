@@ -102,7 +102,20 @@
             <div class="container">
                 <div class="row py-5 align-items-center">
                     <div class="col-md-6 col-lg-7 order-sm-last">
-                        <div id="p5"></div>
+                        <div class="mapa-interactivo">
+
+                            <img style="width: 100%;" src="img/mapa-fondo2.png" >
+
+                            <img class="mapa-interactivo__imagen color-magenta" src="./img/nivel-bajo2.png">
+                            <img class="mapa-interactivo__imagen  color-amarillo" src="./img/nivel-medio2.png">
+                            <img class="mapa-interactivo__imagen color-naranja" src="./img/nivel-alto2.png">
+
+                        </div>
+                        <div class="button-container" >
+                            <button class="button-magenta" onclick="mostrarColor('.color-magenta')">Nivel Bajo</button>
+                            <button class="button-naranja" onclick="mostrarColor('.color-amarillo')">Nivel Medio</button>
+                            <button class="button-amarillo" onclick="mostrarColor('.color-naranja')">Nivel Alto</button>
+                        </div>
                     </div>
                     <div class="col-md-6 col-lg-5 p-4 text-md-right order-sm-first">
                         <h3><i data-feather="map"></i> Mapa interactivo: microbasurales en la RM</h3>
@@ -221,31 +234,9 @@
         integrity="sha512-WIklPM6qPCIp6d3fSSr90j+1unQHUOoWDS4sdTiR8gxUTnyZ8S2Mr8e10sKKJ/bhJgpAa/qG068RDkg6fIlNFA=="
         crossorigin="anonymous"></script>
     <script>
-        // parto creando tres variables
-        var box = document.querySelector("#p5");
-        var w = box.clientWidth;
-        var h = (w / 16) * 9;
-        // defino una altura
-        box.style.color = h + "px";
-        // en caso quieran asomarse a la consola
-        console.log(w);
-        console.log(h);
-        // comenzamos con p5.js
-        function setup() {
-            fondoMapa = loadImage('img/fondo.png');
-            var canvas = createCanvas(w, h);
-            canvas.parent("#p5");
-            background(0);
-        }
-
-        function draw() {
-            fill(255);
-            noStroke(0)
-            ellipse(mouseX, mouseY, 50, 50);
-        }
-
-        function windowResized() {
-            resizeCanvas(w, h);
+        function mostrarColor(clase) {
+            var mapaColor = document.querySelector(clase)
+            mapaColor.classList.toggle('display')
         }
     </script>
     <!--JavaScript para los 286 feather icons - https://feathericons.com/-->
