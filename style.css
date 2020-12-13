@@ -103,7 +103,6 @@ header {
 	position: relative;
 	width: 100%;
 	background: white;
-	overflow: hidden;
 }
 
 .mapa-interactivo__imagen {
@@ -311,25 +310,22 @@ button {
 	padding: 0.2rem 1rem;
 	border: none;
 	border-radius: 4px;
-	color: #fff;
+	background: var(--colorclaro);
+	color: var(--coloroscuro);
 }
 
-button:active{
+button:active {
 	transform: translateY(2px);
 }
 
 .button-magenta {
-	background: #ff00ff;
+	border: 6px solid #ff00ff;
 }
 
 .button-naranja {
-	background: #ee8500;
+	border: 6px solid #ee8500;
 }
 
 .button-amarillo {
-	background: #ffdb24;
-	--color: #ffd900;
-	/* -webkit-text-fill-color: #fff;
-	-webkit-text-stroke: .5px black; */
-	text-shadow: -2px -2px 1px var(--color), 2px 2px 1px var(--color), -2px 2px 1px var(--color), 2px -2px 1px var(--color);
+	border: 6px solid #ffdb24;
 }
