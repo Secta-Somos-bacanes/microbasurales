@@ -294,7 +294,7 @@
         ];
         // No es necesario que editen lo que sigue
         for (let x = 0; x < integrantes.length; x++) {
-            $("#team").append('<div class="col-sm-6 col-xl-4"><div style="border: none" class="card mb-3 shadow-sm"><div class="row no-gutters"><div class="col-lg-5"><img style="height: 100%" src="' + integrantes[x].foto + '" class="card-img" alt="describir imagen"></div><div class="col-lg-7"><div style="background: var(--colorclaro); border-radius: 4px;" class="card-body"><h5 style="color: var(--coloroscuro);" class="card-title">' + integrantes[x].nombre + '</h5><p class="card-text"> <ul><li> ' + integrantes[x].descriptor[0] + "</li>" + "<li>" + integrantes[x].descriptor[1] + "</li></ul>" + "</p></div></div></div></div></div>");
+            $("#team").append('<div class="col-sm-6 col-xl-4"><div style="border: none" class="card mb-3 shadow-sm"><div class="row no-gutters"><div class="col-lg-5"><img style="height: 100%" src="' + integrantes[x].foto + '" class="card-img" alt=""+integrantes[x].nombre+"" ></div><div class="col-lg-7"><div style="background: var(--colorclaro); border-radius: 4px;" class="card-body"><h5 style="color: var(--coloroscuro);" class="card-title">' + integrantes[x].nombre + '</h5><p class="card-text"> <ul><li> ' + integrantes[x].descriptor[0] + "</li>" + "<li>" + integrantes[x].descriptor[1] + "</li></ul>" + "</p></div></div></div></div></div>");
         }
     </script>
 </body>
